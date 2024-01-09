@@ -1,0 +1,9 @@
+10:54:35 **** Clean-only build of configuration Emulation-HW for project convolution_filter_system_hw_link ****
+make clean 
+rm -f binary_container_1.xsa binary_container_1.mdb 
+rm -f *.xsa.sh *.xsa.info *.xsa.link_summary*
+rm -rf binary_container_1.build
+rm -rf .Xil
+
+10:54:36 Build Finished (took 540ms)
+

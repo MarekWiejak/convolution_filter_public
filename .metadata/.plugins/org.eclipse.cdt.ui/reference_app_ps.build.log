@@ -1,0 +1,6 @@
+10:54:34 **** Clean-only build of configuration Emulation-HW for project reference_app_ps ****
+make -j12 clean 
+rm -f reference_app_ps src/aie_control_xrt.o src/benchmark.o
+
+10:54:35 Build Finished (took 228ms)
+

@@ -1,0 +1,22 @@
+10:54:33 **** Clean-only build of configuration Emulation-AIE for project convolution_filter ****
+make clean 
+rm -rf ./Work ./data ../Traces ./aiesim* ./ess* ./profile* ../data/out*
+find ./ -type f | grep -v makefile | xargs rm -Rf
+10:54:34 **** Clean-only build of configuration Emulation-HW for project reference_app_ps ****
+make -j12 clean 
+rm -f reference_app_ps src/aie_control_xrt.o src/benchmark.o
+10:54:35 **** Clean-only build of configuration Emulation-HW for project tiler_sticher_PL ****
+make -j12 clean 
+rm -f  .mdb, 
+rm -rf 
+rm -rf .Xil
+10:54:35 **** Clean-only build of configuration Emulation-HW for project convolution_filter_system_hw_link ****
+make clean 
+rm -f binary_container_1.xsa binary_container_1.mdb 
+rm -f *.xsa.sh *.xsa.info *.xsa.link_summary*
+rm -rf binary_container_1.build
+rm -rf .Xil
+10:54:36 **** Clean-only build of configuration Emulation-HW for project convolution_filter_system ****
+make clean 
+rm -rf ./package.build
+rm -rf package

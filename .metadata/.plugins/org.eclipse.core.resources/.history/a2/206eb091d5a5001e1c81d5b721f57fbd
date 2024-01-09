@@ -1,0 +1,3 @@
+#[connectivity]
+#stream_connect=Tiler_top_1.OutputStream:ai_engine_0.DataIn1
+#stream_connect=ai_engine_0.DataOut1:stitcher_top_1.InputStream

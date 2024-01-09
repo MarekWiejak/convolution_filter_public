@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hwlink:HwLinkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hwlink="http://www.xilinx.com/acceleration/hwlink" name="convolution_filter_system_hw_link" platform="/mnt/disk/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm" systemProject="convolution_filter_system" cpu="pl">
+  <configuration name="Emulation-SW" id="com.xilinx.ide.accel.config.hwlink.sw_emu.418623674">
+    <configBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="binary_container_1" xoccOptions="--config ../system.cfg --clock.freqHZ=400000000:Tiler_top_1,stitcher_top_1">
+        <kernels name="Tiler_top" projectName="tiler_sticher_PL" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="Tiler_top_1" slr=""/>
+        </kernels>
+        <kernels name="stitcher_top" projectName="tiler_sticher_PL" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="stitcher_top_1" slr="Auto"/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.ide.accel.config.hwlink.hw_emu.740703443">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu" exportHw="true">
+      <binaryContainers name="binary_container_1" xoccOptions="--config ../system.cfg --clock.freqHZ=400000000:Tiler_top_1,stitcher_top_1">
+        <kernels name="Tiler_top" projectName="tiler_sticher_PL" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="Tiler_top_1" slr=""/>
+        </kernels>
+        <kernels name="stitcher_top" projectName="tiler_sticher_PL" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="stitcher_top_1" slr="Auto"/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu" exportHw="true">
+      <binaryContainers name="binary_container_1" xoccOptions="--config ../system.cfg">
+        <kernels name="Tiler_top" projectName="tiler_sticher_PL" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="Tiler_top_1" slr=""/>
+        </kernels>
+        <kernels name="stitcher_top" projectName="tiler_sticher_PL" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="stitcher_top_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.ide.accel.config.hwlink.hw.592543743">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
+      <binaryContainers name="binary_container_1" xoccOptions="--config ../system.cfg --clock.freqHZ=400000000:Tiler_top_1,stitcher_top_1">
+        <kernels name="Tiler_top" projectName="tiler_sticher_PL" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="Tiler_top_1" slr=""/>
+        </kernels>
+        <kernels name="stitcher_top" projectName="tiler_sticher_PL" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="stitcher_top_1" slr="Auto"/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
+      <binaryContainers name="binary_container_1" xoccOptions="--config ../system.cfg">
+        <kernels name="Tiler_top" projectName="tiler_sticher_PL" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="Tiler_top_1" slr=""/>
+        </kernels>
+        <kernels name="stitcher_top" projectName="tiler_sticher_PL" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="stitcher_top_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+</hwlink:HwLinkProject>

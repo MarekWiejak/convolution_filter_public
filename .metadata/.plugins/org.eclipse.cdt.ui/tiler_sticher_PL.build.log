@@ -1,0 +1,8 @@
+10:54:35 **** Clean-only build of configuration Emulation-HW for project tiler_sticher_PL ****
+make -j12 clean 
+rm -f  .mdb, 
+rm -rf 
+rm -rf .Xil
+
+10:54:35 Build Finished (took 240ms)
+

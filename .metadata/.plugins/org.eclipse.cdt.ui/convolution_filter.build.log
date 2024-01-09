@@ -1,0 +1,7 @@
+10:54:33 **** Clean-only build of configuration Emulation-AIE for project convolution_filter ****
+make clean 
+rm -rf ./Work ./data ../Traces ./aiesim* ./ess* ./profile* ../data/out*
+find ./ -type f | grep -v makefile | xargs rm -Rf
+
+10:54:34 Build Finished (took 286ms)
+

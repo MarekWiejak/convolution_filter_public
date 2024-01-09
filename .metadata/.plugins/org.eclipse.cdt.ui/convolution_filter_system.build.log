@@ -1,0 +1,7 @@
+10:54:36 **** Clean-only build of configuration Emulation-HW for project convolution_filter_system ****
+make clean 
+rm -rf ./package.build
+rm -rf package
+
+10:54:36 Build Finished (took 789ms)
+
